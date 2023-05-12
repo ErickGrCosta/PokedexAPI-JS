@@ -29,12 +29,14 @@ function openModal(data) {
   pokeStatsNumberHp.text(data.stats[0].base_stat);
   pokeStatsNumberAttack.text(data.stats[1].base_stat);
   pokeStatsNumberDefense.text(data.stats[2].base_stat);
-  pokeType.eq(0).text('');
-  pokeType.eq(1).text('');
-  pokeTypeImg.eq(0).attr('src','./uploads/Water Symbol.png');
-  pokeTypeImg.eq(1).attr('src','');
-  pokeEvolutionImg.eq(1).attr('src', '');
-  pokeEvolutionImg.eq(2).attr('src', '');
+  let i = 0;
+  while (i <= 3) {
+    pokeType.eq(i).text('');
+    pokeTypeImg.eq(i).attr('src','');
+    pokeEvolutionImg.eq(i).attr('src','');
+    pokeEvolution.eq(i).text('No Evolution');
+    i+=1;
+  } 
   $('.hp').val(data.stats[0].base_stat);
   $('.attack').val(data.stats[1].base_stat);
   $('.defense').val(data.stats[2].base_stat);
@@ -46,7 +48,7 @@ function openModal(data) {
   let pokeTypeName = '';
   pokeBaseExperience.eq(1).text('');
   pokeBaseExperience.eq(2).text('');
-  for (let i = 0; i < data.abilities.length; i++) {
+  for (i = 0; i < data.abilities.length; i++) {
     pokeSkill = capitalize(data.abilities[i].ability.name);
     pokeSkills.eq(i).text(pokeSkill);
   }
