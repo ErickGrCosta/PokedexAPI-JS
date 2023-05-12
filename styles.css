@@ -1,0 +1,143 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+h1 {
+    color: black;
+    font-weight: 500;
+}
+
+.title-navbar {
+    color: white;
+    font-weight: 400;
+}
+
+.pokemodal {
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+    padding: auto;
+    margin-bottom: 1%;
+}
+.card {
+    width: 200px;
+    height: 200px;
+}
+
+main {
+    background: rgb(242, 242, 103);
+}
+
+.navbar {
+    background: linear-gradient(to bottom, rgb(247, 85, 85), rgb(242, 242, 103));
+}
+
+.modal-content{
+    padding: 3%;
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(242, 242, 103);
+}
+
+.columns {
+    border: 1px black solid;
+    display: flex;
+    background: #ff0202;
+    color: whitesmoke;
+}
+
+.column, .evolutions {
+    border: 1px black solid;
+    flex-shrink: 1;
+}
+
+.image-container {
+    background-color: #ca0000;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.poke-stats-number-hp, .poke-stats-number-attack, .poke-stats-number-defense {
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal-content-scrollable {
+    overflow-y: auto;
+}
+
+.figure-img {
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.figure-img:hover {
+    left: 50%;
+}
+
+.card-hover {
+    transition: 0.2s;
+    border-radius: 15px;
+    background: rgb(251,215,67);
+    box-shadow: 0 -5px 5px rgba(242, 12, 12, 0.05),
+    inset 0 -5px 5px rgba(200, 189, 189, 0.7),
+    0 5px 5px rgba(249, 183, 183, 0.3),
+    inset 0 5px 5px rgba(200, 189, 189, 0.7);
+    border: rgb(54,59,129);
+    border-style: double;
+    border-width: 5px;
+}
+
+.card-hover:hover .figure-img {
+    background-color: rgb(242, 242, 103);
+}
+
+.card-hover:hover {
+    background:#ff0202;
+    color: whitesmoke;
+    border: white;
+    border-style: inset;
+    border-width: 5px;
+}
+
+.column {
+    font-weight: bold;
+}
+
+.image-card-background{
+    border-radius: 50%;
+    background-color: rgb(74, 61, 101);
+    margin-bottom: 5%;
+}
+
+h3 {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.evolutions-background {
+    background-color: #ff0202;
+}
+
+.evolutions-degrade {
+    background: linear-gradient(to bottom, rgb(233, 137, 137), #b52525);
+    color: whitesmoke;
+}
+
+.pokedexlogo {
+    width: 80%;
+    height: 50%;
+    align-items: center;
+}
+
+.modal-inner-text {
+    color: whitesmoke;
+}
+
+/* Arrumar a cor da fonte */

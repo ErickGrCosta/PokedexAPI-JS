@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="screen-background">
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content modal-content-scrollable">
+            <!-- Estratégia para entender o FlexBox = Colorir o Background. -->
+            <div class="columns">
+                <div class="side-image column is-4 has-text-centered">
+                    <h3 class="modal-text title"></h3>
+                    <img class="image-card-background image is-128x128 is-inline" src="">
+                    <p class="modal-inner-text"><strong>HP</strong></p>
+                    <div class="is-relative mt-1">
+                        <progress class="progress is-primary is-large hp" value="" max="100"></progress>
+                        <p class="poke-stats-number-hp"></p>
+                    </div>
+                    <p class="modal-inner-text"><strong>Attack</strong></p>
+                    <div class="is-relative mt-1">
+                        <progress class="progress is-danger is-large attack" value="" max="100"></progress>
+                        <p class="poke-stats-number-attack"></p>
+                    </div>
+                    <p class="modal-inner-text"><strong>Defense</strong></p>
+                    <div class="is-relative mt-1">
+                        <progress class="progress is-link is-large defense" value="" max="100"></progress>
+                        <p class="poke-stats-number-defense"></p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+                <div class="column is-2 has-text-centered">
+                    <div class="mb-3 mt-3">
+                        <p class="poke-type"></p>
+                        <img class="poke-type-img" src="">
+                        <p class="poke-type"></p>
+                        <img class="poke-type-img" src="">
+                    </div>
+                    <div class="mt-6">
+                        <p>Habilidades:</p>
+                        <p class="poke-skills"></p>
+                        <p class="poke-skills"></p>
+                        <p class="poke-skills"></p>
+                        <p class="poke-skills"></p>
+                    </div>
+                </div>
+                <div class="evolutions-background column is-6 has-text-centered">
+                    
+                    <div>
+                        Evolutions:
+                        <div class="evolutions-background">
+                            <div class="evolutions-degrade">
+                                <div class="evolutions pt-3">
+                                    <p class="poke-evolution"></p>
+                                    <img class="poke-evolution-img" src="">
+                                    <p class="poke-base-experience">pokeExperience</p>
+                                </div>
+                                <div class="evolutions pt-3">
+                                    <p class="poke-evolution"></p>
+                                    <img class="poke-evolution-img" src="">
+                                    <p class="poke-base-experience">pokeExperience</p>
+                                </div>
+                                <div class="evolutions pt-3">
+                                    <p class="poke-evolution"></p>
+                                    <img class="poke-evolution-img" src="">
+                                    <p class="poke-base-experience">pokeExperience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="navbar is-widescreen is-flex is-justify-content-center">
+            <a class="navbar-start">
+                <img src="./uploads/Pokebola-Pokémon-PNG.png" alt="pokebola" style="max-height: 200px;" class="mx-3 mt-3 py-3 px-3">
+            </a>
+            <div class="has-text-centered is-flex-direction-column">
+                <img class="pokedexlogo" src="./uploads/PokedexLogo.png" alt="">
+                <div class="message navbar-square has-text-centered">
+                    <div class="message-header is-flex is-justify-content-center">
+                        <div class="has-text-centered">
+                            <p class="">Welcome to the pokedex!</p>
+                        </div>
+                    </div>
+                    <div class="message-body">
+                        <div class="has-text-centered">
+                            <p>Here you can learn more about all of the pokemons!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="navbar-end">
+                <img src="./uploads/Pokebola-Pokémon-PNG.png" alt="pokebola" style="max-height: 200px;" class="mx-3 mt-3 py-3 px-3">
+            </a>
+        </div>
+
+    </header>
+    <main>
+        <section class="section mx-6">
+            <div class="cards-place mb-3 is-flex is-flex-wrap-wrap is-justify-content-center">
+            </div>
+        </section>
+
+        <footer class="footer box-dark">
+            <div class="content has-text-centered">
+                <p>Pokedex Task - April 2023 - Erick Garcia Costa</p>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
